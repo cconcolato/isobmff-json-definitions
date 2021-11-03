@@ -1,0 +1,30 @@
+{
+    "type": "stsc",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "entry_count",
+            "type": "Uint32"
+        },
+        {
+            "type": "Array",
+            "count": "entry_count",
+            "fields":
+            [
+                {
+                    "name": "first_chunk",
+                    "type": "Uint32"
+                },
+                {
+                    "name": "samples_per_chunk",
+                    "type": "Uint32"
+                },
+                {
+                    "name": "sample_description_index",
+                    "type": "Uint32"
+                }
+            ]
+        }
+    ]
+}

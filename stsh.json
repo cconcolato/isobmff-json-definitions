@@ -1,0 +1,26 @@
+{
+    "type": "stsh",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "entry_count",
+            "type": "Uint32"
+        },
+        {
+            "type": "Array",
+            "count": "entry_count",
+            "fields":
+            [
+                {
+                    "name": "shadowed_sample_numbers",
+                    "type": "Uint32"
+                },
+                {
+                    "name": "sync_sample_numbers",
+                    "type": "Uint32"
+                }
+            ]
+        }
+    ]
+}

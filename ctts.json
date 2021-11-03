@@ -1,0 +1,32 @@
+{
+    "type": "ctts",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "entry_count",
+            "type": "Uint32"
+        },
+        {
+            "type": "Array",
+            "count": "entry_count",
+            "fields":
+            [
+                {
+                    "name": "sample_counts",
+                    "type": "Int32"
+                },
+                {
+                    "name": "sample_offsets",
+                    "type": "Int32",
+                    "condition": "boxIsVersion0"
+                },
+                {
+                    "name": "sample_offsets",
+                    "type": "Uint32",
+                    "condition": "boxIsVersion1"
+                }
+            ]
+        }
+    ]
+}

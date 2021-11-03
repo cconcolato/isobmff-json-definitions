@@ -1,0 +1,21 @@
+{
+    "type": "pdin",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "type": "Array",
+            "fields":
+            [
+                {
+                    "name": "rate",
+                    "type": "Uint32"
+                },
+                {
+                    "name": "initial_delay",
+                    "type": "Uint32"
+                }
+            ]
+        }
+    ]
+}

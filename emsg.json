@@ -1,0 +1,72 @@
+{
+    "type": "emsg",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "scheme_id_uri",
+            "type": "CString",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "value",
+            "type": "CString",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "timescale",
+            "type": "Uint32",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "presentation_time_delta",
+            "type": "Int32",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "event_duration",
+            "type": "Uint32",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "id",
+            "type": "Uint32",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "timescale",
+            "type": "Uint32",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "presentation_time_delta",
+            "type": "Int64",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "event_duration",
+            "type": "Uint32",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "id",
+            "type": "Uint32",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "scheme_id_uri",
+            "type": "CString",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "value",
+            "type": "CString",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "message",
+            "type": "Array",
+            "arrayEntryType": "Uint8"
+        }
+    ]
+}

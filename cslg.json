@@ -1,0 +1,34 @@
+{
+    "type": "cslg",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "type": "Array",
+            "condition": "boxIsVersion0",
+            "fields":
+            [
+                {
+                    "name": "compositionToDTSShift",
+                    "type": "Int32"
+                },
+                {
+                    "name": "leastDecodeToDisplayDelta",
+                    "type": "Int32"
+                },
+                {
+                    "name": "greatestDecodeToDisplayDelta",
+                    "type": "Int32"
+                },
+                {
+                    "name": "compositionStartTime",
+                    "type": "Int32"
+                },
+                {
+                    "name": "compositionEndTime",
+                    "type": "Int32"
+                }
+            ]
+        }
+    ]
+}

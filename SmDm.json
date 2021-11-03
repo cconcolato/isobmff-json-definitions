@@ -1,0 +1,47 @@
+{
+    "type": "SmDm",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "primaryRChromaticity_x",
+            "type": "Uint16"
+        },
+        {
+            "name": "primaryRChromaticity_y",
+            "type": "Uint16"
+        },
+        {
+            "name": "primaryGChromaticity_x",
+            "type": "Uint16"
+        },
+        {
+            "name": "primaryGChromaticity_y",
+            "type": "Uint16"
+        },
+        {
+            "name": "primaryBChromaticity_x",
+            "type": "Uint16"
+        },
+        {
+            "name": "primaryBChromaticity_y",
+            "type": "Uint16"
+        },
+        {
+            "name": "whitePointChromaticity_x",
+            "type": "Uint16"
+        },
+        {
+            "name": "whitePointChromaticity_y",
+            "type": "Uint16"
+        },
+        {
+            "name": "luminanceMax",
+            "type": "Uint32"
+        },
+        {
+            "name": "luminanceMin",
+            "type": "Uint32"
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+{
+    "type": "rash",
+    "parentType": "SampleGroup"
+}

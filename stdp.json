@@ -1,0 +1,12 @@
+{
+    "type": "stdp",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "priority",
+            "type": "Array",
+            "arrayEntryType": "Uint16"
+        }
+    ]
+}

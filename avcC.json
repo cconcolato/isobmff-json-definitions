@@ -1,0 +1,82 @@
+[
+    {
+        "type": "avcC",
+        "parentType": "Box",
+        "fields":
+        [
+            {
+                "name": "configurationVersion",
+                "type": "Uint8",
+                "validation": 1
+            },
+            {
+                "name": "AVCProfileIndication",
+                "type": "Uint8"
+            },
+            {
+                "name": "profile_compatibility",
+                "type": "Uint8"
+            },
+            {
+                "name": "AVCLevelIndication",
+                "type": "Uint8"
+            },
+            {
+                "name": "reserved_1",
+                "type": "bit6",
+                "validation": 63
+            },
+            {
+                "name": "lengthSizeMinusOne",
+                "type": "bit2"
+            },
+            {
+                "name": "reserved_2",
+                "type": "bit3",
+                "validation": 7
+            },
+            {
+                "name": "nb_SPS_nalus",
+                "type": "bit5"
+            },
+            {
+                "name": "SPS",
+                "type": "Array",
+                "arrayEntryType": "avcCNALU",
+                "count": "nb_SPS_nalus"
+            },
+            {
+                "name": "nb_PPS_nalus",
+                "type": "Uint8"
+            },
+            {
+                "name": "PPS",
+                "type": "Array",
+                "arrayEntryType": "avcCNALU",
+                "count": "nb_PPS_nalus"
+            },
+            {
+                "name": "ext",
+                "type": "Array",
+                "arrayEntryType": "Uint8"
+            }
+        ]
+    },
+    {
+        "type": "avcCNALU",
+        "parentType": null,
+        "fields":
+        [
+            {
+                "name": "length",
+                "type": "Uint16"
+            },
+            {
+                "name": "nalu",
+                "type": "Array",
+                "arrayEntryType": "Uint8",
+                "count": "length"
+            }
+        ]
+    }
+]

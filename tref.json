@@ -1,0 +1,26 @@
+[
+    {
+        "type": "tref",
+        "parentType": "Box",
+        "fields":
+        [
+            {
+                "name": "boxes",
+                "type": "Array",
+                "arrayEntryBaseType": "TrackReferenceTypeBox"
+            }
+        ]
+    },
+    {
+        "type": "TrackReferenceTypeBox",
+        "parentType": "Box",
+        "fields":
+        [
+            {
+                "name": "track_ids",
+                "type": "Array",
+                "arrayEntryType": "Uint32"
+            }
+        ]
+    }
+]

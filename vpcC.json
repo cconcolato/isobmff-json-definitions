@@ -1,0 +1,106 @@
+{
+    "type": "vpcC",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "profile",
+            "type": "Uint8",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "level",
+            "type": "Uint8",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "bitDepth",
+            "type": "bit4",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "chromaSubsampling",
+            "type": "bit3",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "videoFullRangeFlag",
+            "type": "bit1",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "colourPrimaries",
+            "type": "Uint8",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "transferCharacteristics",
+            "type": "Uint8",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "matrixCoefficients",
+            "type": "Uint8",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "codecIntializationDataSize",
+            "type": "Uint16",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "codecIntializationData",
+            "type": "Array",
+            "arrayEntryType": "Uint8",
+            "count": "codecIntializationDataSize",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "profile",
+            "type": "Uint8",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "level",
+            "type": "Uint8",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "bitDepth",
+            "type": "bit4",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "colorSpace",
+            "type": "bit4",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "chromaSubsampling",
+            "type": "bit4",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "transferFunction",
+            "type": "bit3",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "videoFullRangeFlag",
+            "type": "bit1",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "codecIntializationDataSize",
+            "type": "Uint16",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "codecIntializationData",
+            "type": "Array",
+            "arrayEntryType": "Uint8",
+            "count": "codecIntializationDataSize",
+            "condition": "boxIsVersion0"
+        }
+    ]
+}

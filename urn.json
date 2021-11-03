@@ -1,0 +1,23 @@
+{
+    "type": "urn ",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "name",
+            "type": "CString"
+        },
+        {
+            "name": "location",
+            "type": "CString",
+            "condition": "urnHasLocation"
+        }
+    ],
+    "flags":
+    [
+        {
+            "name": "same-file",
+            "value": 1
+        }
+    ]
+}

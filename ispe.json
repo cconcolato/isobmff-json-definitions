@@ -1,0 +1,15 @@
+{
+    "type": "ispe",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "image_width",
+            "type": "Uint32"
+        },
+        {
+            "name": "image_height",
+            "type": "Uint32"
+        }
+    ]
+}

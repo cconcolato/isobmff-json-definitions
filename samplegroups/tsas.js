@@ -1,0 +1,4 @@
+{
+    "type": "tsas",
+    "parentType": "SampleGroup"
+}

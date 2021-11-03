@@ -1,0 +1,22 @@
+{
+    "type": "stsz",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "sample_size",
+            "type": "Uint32"
+        },
+        {
+            "name": "sample_count",
+            "type": "Uint32"
+        },
+        {
+            "name": "sample_sizes",
+            "type": "Array",
+            "arrayEntryType": "Uint32",
+            "count": "sample_count",
+            "condition": "stszIsSampleSize0"
+        }
+    ]
+}

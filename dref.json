@@ -1,0 +1,17 @@
+{
+    "type": "dref",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "entry_count",
+            "type": "Uint32"
+        },
+        {
+            "name": "entries",
+            "type": "Array",
+            "arrayEntryBaseType": "Box",
+            "count": "entry_count"
+        }
+    ]
+}

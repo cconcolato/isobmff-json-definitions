@@ -1,0 +1,228 @@
+[
+    {
+        "type": "Box",
+        "parentType": null,
+        "fields":
+        [
+            {
+                "name": "size",
+                "type": "Uint32"
+            },
+            {
+                "name": "type",
+                "type": "String4",
+                "isTypeKey": true
+            },
+            {
+                "name": "uuid",
+                "type": "Hex16",
+                "condition": "boxIsUuid",
+                "isTypeKey": true
+            },
+            {
+                "name": "size",
+                "type": "Uint64",
+                "condition": "boxSizeIs1"
+            }
+        ]
+    },
+    {
+        "type": "FullBox",
+        "parentType": "Box",
+        "fields":
+        [
+            {
+                "name": "version",
+                "type": "Uint8"
+            },
+            {
+                "name": "flags",
+                "type": "Flags24"
+            }
+        ]
+    },
+    {
+        "type": "ContainerBox",
+        "parentType": "Box",
+        "fields":
+        [
+            {
+                "name": "boxes",
+                "type": "Array",
+                "arrayEntryBaseType": "Box"
+            }
+        ]
+    },
+    {
+        "type": "SampleGroup",
+        "parentType": null
+    },
+    {
+        "type": "mdat",
+        "parentType": "Box"
+    },
+    {
+        "type": "idat",
+        "parentType": "Box"
+    },
+    {
+        "type": "free",
+        "parentType": "Box"
+    },
+    {
+        "type": "skip",
+        "parentType": "Box"
+    },
+    {
+        "type": "wide",
+        "parentType": "Box"
+    },
+    {
+        "type": "hmhd",
+        "parentType": "FullBox"
+    },
+    {
+        "type": "nmhd",
+        "parentType": "FullBox"
+    },
+    {
+        "type": "iods",
+        "parentType": "FullBox"
+    },
+    {
+        "type": "xml ",
+        "parentType": "FullBox"
+    },
+    {
+        "type": "bxml",
+        "parentType": "FullBox"
+    },
+    {
+        "type": "ipro",
+        "parentType": "FullBox"
+    },
+    {
+        "type": "moov",
+        "parentType": "ContainerBox",
+        "parents":
+        [
+            "trak",
+            "pssh"
+        ]
+    },
+    {
+        "type": "trak",
+        "parentType": "ContainerBox"
+    },
+    {
+        "type": "edts",
+        "parentType": "ContainerBox"
+    },
+    {
+        "type": "mdia",
+        "parentType": "ContainerBox"
+    },
+    {
+        "type": "minf",
+        "parentType": "ContainerBox"
+    },
+    {
+        "type": "dinf",
+        "parentType": "ContainerBox"
+    },
+    {
+        "type": "mvex",
+        "parentType": "ContainerBox",
+        "parents":
+        [
+            "trex"
+        ]
+    },
+    {
+        "type": "moof",
+        "parentType": "ContainerBox",
+        "parents":
+        [
+            "traf"
+        ]
+    },
+    {
+        "type": "traf",
+        "parentType": "ContainerBox",
+        "parents":
+        [
+            "trun",
+            "sgpd",
+            "sbgp"
+        ]
+    },
+    {
+        "type": "mfra",
+        "parentType": "ContainerBox",
+        "parents":
+        [
+            "tfra"
+        ]
+    },
+    {
+        "type": "vttc",
+        "parentType": "ContainerBox"
+    },
+    {
+        "type": "stbl",
+        "parentType": "ContainerBox",
+        "parents":
+        [
+            "sgpd",
+            "sbgp"
+        ]
+    },
+    {
+        "type": "hnti",
+        "parentType": "ContainerBox"
+    },
+    {
+        "type": "hinf",
+        "parentType": "ContainerBox"
+    },
+    {
+        "type": "strk",
+        "parentType": "ContainerBox"
+    },
+    {
+        "type": "strd",
+        "parentType": "ContainerBox"
+    },
+    {
+        "type": "sinf",
+        "parentType": "ContainerBox"
+    },
+    {
+        "type": "rinf",
+        "parentType": "ContainerBox"
+    },
+    {
+        "type": "schi",
+        "parentType": "ContainerBox"
+    },
+    {
+        "type": "ipco",
+        "parentType": "ContainerBox"
+    },
+    {
+        "type": "udta",
+        "parentType": "ContainerBox",
+        "parents":
+        [
+            "kind"
+        ]
+    },
+    {
+        "type": "iprp",
+        "parentType": "ContainerBox",
+        "parents":
+        [
+            "ipma"
+        ]
+    }
+]

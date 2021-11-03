@@ -1,0 +1,15 @@
+{
+    "type": "rtp ",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "descriptionformat",
+            "type": "String4"
+        },
+        {
+            "name": "sdptext",
+            "type": "String"
+        }
+    ]
+}

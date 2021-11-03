@@ -1,0 +1,85 @@
+[
+    {
+        "type": "tfra",
+        "parentType": "FullBox",
+        "fields":
+        [
+            {
+                "name": "track_ID",
+                "type": "Uint32"
+            },
+            {
+                "name": "reserved",
+                "type": "Uint24"
+            },
+            {
+                "name": "reserved_2bit",
+                "type": "bit2"
+            },
+            {
+                "name": "length_size_of_traf_num",
+                "type": "bit2"
+            },
+            {
+                "name": "length_size_of_trun_num",
+                "type": "bit2"
+            },
+            {
+                "name": "length_size_of_sample_num",
+                "type": "bit2"
+            },
+            {
+                "name": "number_of_entries",
+                "type": "Uint32"
+            },
+            {
+                "name": "entries",
+                "type": "Array",
+                "count": "number_of_entries",
+                "arrayEntryType": "tfraEntry"
+            }
+        ]
+    },
+    {
+        "type": "tfraEntry",
+        "parentType": null,
+        "fields":
+        [
+            {
+                "name": "time",
+                "type": "Uint64",
+                "condition": "boxIsVersion1"
+            },
+            {
+                "name": "moof_offset",
+                "type": "Uint64",
+                "condition": "boxIsVersion1"
+            },
+            {
+                "name": "time",
+                "type": "Uint32",
+                "condition": "boxIsVersion0"
+            },
+            {
+                "name": "moof_offset",
+                "type": "Uint32",
+                "condition": "boxIsVersion0"
+            },
+            {
+                "name": "traf_number",
+                "type": "Uint",
+                "bitSize": "tfraSize"
+            },
+            {
+                "name": "trun_number",
+                "type": "Uint",
+                "bitSize": "tfraSize"
+            },
+            {
+                "name": "sample_number",
+                "type": "Uint",
+                "bitSize": "tfraSize"
+            }
+        ]
+    }
+]

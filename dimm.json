@@ -1,0 +1,11 @@
+{
+    "type": "dimm",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "bytessent",
+            "type": "Uint64"
+        }
+    ]
+}

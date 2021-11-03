@@ -1,0 +1,49 @@
+{
+    "type": "sgpd",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "grouping_type",
+            "type": "String4"
+        },
+        {
+            "name": "default_length",
+            "type": "Uint32",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "default_group_description_index",
+            "type": "Uint32",
+            "condition": "boxIsVersion2OrAbove"
+        },
+        {
+            "name": "entry_count",
+            "type": "Uint32"
+        },
+        {
+            "name": "entries",
+            "type": "Array",
+            "count": "entry_count",
+            "fields":
+            [
+                {
+                    "name": "description_length",
+                    "type": "Uint32",
+                    "condition": "sgpdHasDescriptionLength"
+                },
+                {
+                    "name": "description_length",
+                    "type": "Uint32",
+                    "condition": "sgpdHasNotDescriptionLength",
+                    "value": "default_length"
+                },
+                {
+                    "name": "box",
+                    "baseType": "SampleGroup",
+                    "count": "description_length"
+                }
+            ]
+        }
+    ]
+}

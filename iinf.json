@@ -1,0 +1,23 @@
+{
+    "type": "iinf",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "entry_count",
+            "type": "Uint16",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "entry_count",
+            "type": "Uint32",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "item_infos",
+            "type": "Array",
+            "arrayEntryBaseType": "Box",
+            "count": "entry_count"
+        }
+    ]
+}

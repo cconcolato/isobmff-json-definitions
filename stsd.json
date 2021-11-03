@@ -1,0 +1,16 @@
+{
+    "type": "stsd",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "entry_count",
+            "type": "Uint32"
+        },
+        {
+            "name": "entries",
+            "type": "Array",
+            "arrayEntryBaseType": "SampleEntry"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "type": "mfro",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "_size",
+            "type": "Uint32"
+        }
+    ]
+}

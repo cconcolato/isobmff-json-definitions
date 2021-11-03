@@ -1,0 +1,82 @@
+[
+    {
+        "type": "sidx",
+        "parentType": "FullBox",
+        "fields":
+        [
+            {
+                "name": "reference_ID",
+                "type": "Uint32"
+            },
+            {
+                "name": "timescale",
+                "type": "Uint32"
+            },
+            {
+                "name": "earliest_presentation_time",
+                "type": "Uint32",
+                "condition": "boxIsVersion0"
+            },
+            {
+                "name": "first_offset",
+                "type": "Uint32",
+                "condition": "boxIsVersion0"
+            },
+            {
+                "name": "earliest_presentation_time",
+                "type": "Uint64",
+                "condition": "boxIsVersion1"
+            },
+            {
+                "name": "first_offset",
+                "type": "Uint64",
+                "condition": "boxIsVersion1"
+            },
+            {
+                "name": "reserved",
+                "type": "Uint16"
+            },
+            {
+                "name": "reference_count",
+                "type": "Uint16"
+            },
+            {
+                "name": "references",
+                "type": "Array",
+                "arrayEntryType": "sidxEntry",
+                "count": "reference_count"
+            }
+        ]
+    },
+    {
+        "type": "sidxEntry",
+        "parentType": null,
+        "fields":
+        [
+            {
+                "name": "reference_type",
+                "type": "bit1"
+            },
+            {
+                "name": "referenced_size",
+                "type": "bit31"
+            },
+            {
+                "name": "subsegment_duration",
+                "type": "Uint32"
+            },
+            {
+                "name": "starts_with_SAP",
+                "type": "bit1"
+            },
+            {
+                "name": "SAP_type",
+                "type": "bit3"
+            },
+            {
+                "name": "SAP_delta_time",
+                "type": "bit28"
+            }
+        ]
+    }
+]

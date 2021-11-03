@@ -1,0 +1,133 @@
+{
+    "type": "iloc",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "offset_size",
+            "type": "bit4",
+            "validation": "ilocValueIs0Or4Or8"
+        },
+        {
+            "name": "length_size",
+            "type": "bit4",
+            "validation": "ilocValueIs0Or4Or8"
+        },
+        {
+            "name": "base_offset_size",
+            "type": "bit4",
+            "validation": "ilocValueIs0Or4Or8"
+        },
+        {
+            "name": "reserved",
+            "type": "bit4",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "index_size",
+            "type": "bit4",
+            "condition": "boxIsVersion1Or2",
+            "validation": "ilocIndexSizeIs0Or4Or8"
+        },
+        {
+            "name": "item_count",
+            "type": "Uint16",
+            "condition": "boxIsVersionLessThan2"
+        },
+        {
+            "name": "item_count",
+            "type": "Uint32",
+            "condition": "boxIsVersion2"
+        },
+        {
+            "name": "items",
+            "type": "Array",
+            "count": "item_count",
+            "fields":
+            [
+                {
+                    "name": "item_ID",
+                    "type": "Uint16",
+                    "condition": "boxIsVersionLessThan2"
+                },
+                {
+                    "name": "item_ID",
+                    "type": "Uint32",
+                    "condition": "boxIsVersion2"
+                },
+                {
+                    "name": "reserved_1",
+                    "type": "bit12",
+                    "validation": 0,
+                    "condition": "boxIsVersion1Or2"
+                },
+                {
+                    "name": "construction_method",
+                    "type": "bit4",
+                    "condition": "boxIsVersion1Or2"
+                },
+                {
+                    "name": "data_reference_index",
+                    "type": "Uint16"
+                },
+                {
+                    "name": "base_offset",
+                    "type": "_static",
+                    "validation": 0,
+                    "condition": "ilocIsBaseOffsetSize0"
+                },
+                {
+                    "name": "base_offset",
+                    "type": "Uint32",
+                    "condition": "ilocIsBaseOffsetSize4"
+                },
+                {
+                    "name": "base_offset",
+                    "type": "Uint64",
+                    "condition": "ilocIsBaseOffsetSize8"
+                },
+                {
+                    "name": "extent_count",
+                    "type": "Uint16"
+                },
+                {
+                    "name": "extents",
+                    "type": "Array",
+                    "fields":
+                    [
+                        {
+                            "name": "item_reference_index",
+                            "type": "Uint32",
+                            "condition": "ilocIsIndex32Bits"
+                        },
+                        {
+                            "name": "item_reference_index",
+                            "type": "Uint64",
+                            "condition": "ilocIsIndex64Bits"
+                        },
+                        {
+                            "name": "extent_offset",
+                            "type": "Uint32",
+                            "condition": "ilocIsOffsetSize4"
+                        },
+                        {
+                            "name": "extent_offset",
+                            "type": "Uint64",
+                            "condition": "ilocIsOffsetSize8"
+                        },
+                        {
+                            "name": "extent_length",
+                            "type": "Uint32",
+                            "condition": "ilocIsLengthSize4"
+                        },
+                        {
+                            "name": "extent_length",
+                            "type": "Uint64",
+                            "condition": "ilocIsLengthSize8"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

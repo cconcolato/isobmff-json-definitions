@@ -1,0 +1,29 @@
+{
+    "type": "sdtp",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "type": "Array",
+            "fields":
+            [
+                {
+                    "name": "is_leading",
+                    "type": "bit2"
+                },
+                {
+                    "name": "sample_depends_on",
+                    "type": "bit2"
+                },
+                {
+                    "name": "sample_is_depended_on",
+                    "type": "bit2"
+                },
+                {
+                    "name": "sample_has_redundancy",
+                    "type": "bit2"
+                }
+            ]
+        }
+    ]
+}

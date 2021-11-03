@@ -1,0 +1,16 @@
+{
+    "type": "trep",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "track_ID",
+            "type": "Uint32"
+        },
+        {
+            "name": "boxes",
+            "type": "Array",
+            "arrayEntryBaseType": "Box"
+        }
+    ]
+}

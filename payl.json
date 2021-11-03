@@ -1,0 +1,11 @@
+{
+    "type": "payl",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "text",
+            "type": "String"
+        }
+    ]
+}

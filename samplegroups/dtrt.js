@@ -1,0 +1,4 @@
+{
+    "type": "dtrt",
+    "parentType": "SampleGroup"
+}

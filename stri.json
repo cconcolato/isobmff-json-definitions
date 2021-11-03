@@ -1,0 +1,24 @@
+{
+    "type": "stri",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "switch_group",
+            "type": "Uint16"
+        },
+        {
+            "name": "alternate_group",
+            "type": "Uint16"
+        },
+        {
+            "name": "sub_track_id",
+            "type": "Uint32"
+        },
+        {
+            "name": "attribute_list",
+            "type": "Array",
+            "arrayEntryType": "Uint32"
+        }
+    ]
+}

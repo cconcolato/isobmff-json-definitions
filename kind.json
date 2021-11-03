@@ -1,0 +1,15 @@
+{
+    "type": "kind",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "schemeURI",
+            "type": "CString"
+        },
+        {
+            "name": "value",
+            "type": "CString"
+        }
+    ]
+}

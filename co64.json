@@ -1,0 +1,17 @@
+{
+    "type": "co64",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "entry_count",
+            "type": "Uint32"
+        },
+        {
+            "name": "chunk_offsets",
+            "type": "Array",
+            "arrayEntryType": "Uint64",
+            "count": "entry_count"
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+{
+    "type": "scif",
+    "parentType": "SampleGroup"
+}

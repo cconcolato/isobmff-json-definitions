@@ -1,0 +1,19 @@
+{
+    "type": "btrt",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "bufferSizeDB",
+            "type": "Uint32"
+        },
+        {
+            "name": "maxBitrate",
+            "type": "Uint32"
+        },
+        {
+            "name": "avgBitrate",
+            "type": "Uint32"
+        }
+    ]
+}

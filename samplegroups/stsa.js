@@ -1,0 +1,4 @@
+{
+    "type": "stsa",
+    "parentType": "SampleGroup"
+}

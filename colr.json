@@ -1,0 +1,54 @@
+{
+    "type": "colr",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "colour_type",
+            "type": "String4"
+        },
+        {
+            "name": "colour_primaries",
+            "type": "Uint16",
+            "condition": "colrIsNclx"
+        },
+        {
+            "name": "transfer_characteristics",
+            "type": "Uint16",
+            "condition": "colrIsNclx"
+        },
+        {
+            "name": "matrix_coefficients",
+            "type": "Uint16",
+            "condition": "colrIsNclx"
+        },
+        {
+            "name": "matrix_coefficients",
+            "type": "Uint16",
+            "condition": "colrIsNclx"
+        },
+        {
+            "name": "full_range_flag",
+            "type": "bit1",
+            "condition": "colrIsNclx"
+        },
+        {
+            "name": "reserved",
+            "type": "bit7",
+            "validation": 0,
+            "condition": "colrIsNclx"
+        },
+        {
+            "name": "ICC_profile",
+            "type": "Array",
+            "arrayEntryType": "Uint8",
+            "condition": "colrIsRicc"
+        },
+        {
+            "name": "ICC_profile",
+            "type": "Array",
+            "arrayEntryType": "Uint8",
+            "condition": "colrIsProf"
+        }
+    ]
+}

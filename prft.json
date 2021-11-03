@@ -1,0 +1,25 @@
+{
+    "type": "prft",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "ref_track_id",
+            "type": "Uint32"
+        },
+        {
+            "name": "ntp_timestamp",
+            "type": "Uint64"
+        },
+        {
+            "name": "media_time",
+            "type": "Uint32",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "media_time",
+            "type": "Uint64",
+            "condition": "boxIsVersion1"
+        }
+    ]
+}

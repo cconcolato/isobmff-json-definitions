@@ -1,0 +1,17 @@
+{
+    "type": "tfdt",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "baseMediaDecodeTime",
+            "type": "Uint32",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "baseMediaDecodeTime",
+            "type": "Uint64",
+            "condition": "boxIsVersion1"
+        }
+    ]
+}

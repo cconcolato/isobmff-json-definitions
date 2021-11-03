@@ -1,0 +1,52 @@
+{
+    "type": "dec3",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "data_rate",
+            "type": "bit13"
+        },
+        {
+            "name": "num_ind_sub",
+            "type": "bit3"
+        },
+        {
+            "name": "ind_subs",
+            "type": "Array",
+            "count": "dec3CountSubs",
+            "fields":
+            [
+                {
+                    "name": "fscod",
+                    "type": "bit2"
+                },
+                {
+                    "name": "bsid",
+                    "type": "bit5"
+                },
+                {
+                    "name": "bsmod",
+                    "type": "bit5"
+                },
+                {
+                    "name": "acmod",
+                    "type": "bit3"
+                },
+                {
+                    "name": "lfeon",
+                    "type": "bit1"
+                },
+                {
+                    "name": "num_dep_sub",
+                    "type": "bit4"
+                },
+                {
+                    "name": "chan_loc",
+                    "type": "bit9",
+                    "condition": "dec3HasChanLoc"
+                }
+            ]
+        }
+    ]
+}

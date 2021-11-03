@@ -1,0 +1,15 @@
+{
+    "type": "CoLL",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "maxCLL",
+            "type": "Uint16"
+        },
+        {
+            "name": "maxFALL",
+            "type": "Uint16"
+        }
+    ]
+}

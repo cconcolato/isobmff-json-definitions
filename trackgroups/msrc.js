@@ -1,0 +1,4 @@
+{
+    "type": "msrc",
+    "parentType": "TrackGroupTypeBox"
+}

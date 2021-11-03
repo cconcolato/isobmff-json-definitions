@@ -1,0 +1,48 @@
+{
+    "type": "tenc",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "reserved_1",
+            "type": "Uint8"
+        },
+        {
+            "name": "reserved_2",
+            "type": "Uint8",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "default_crypt_byte_block",
+            "type": "bit4",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "default_skip_byte_block",
+            "type": "bit4",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "default_isProtected",
+            "type": "Uint8"
+        },
+        {
+            "name": "default_Per_Sample_IV_Size",
+            "type": "Uint8"
+        },
+        {
+            "name": "default_KID",
+            "type": "Hex16"
+        },
+        {
+            "name": "default_constant_IV_size",
+            "type": "Uint8",
+            "condition": "tencHasConstantIV"
+        },
+        {
+            "name": "default_constant_IV",
+            "type": "Uint8",
+            "condition": "tencHasConstantIV"
+        }
+    ]
+}

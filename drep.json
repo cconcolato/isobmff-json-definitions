@@ -1,0 +1,11 @@
+{
+    "type": "drep",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "bytessent",
+            "type": "Uint64"
+        }
+    ]
+}

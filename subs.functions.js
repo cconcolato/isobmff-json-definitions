@@ -1,0 +1,1 @@
+function subsHasSubsamples(box) { return box.subsample_count > 0; }

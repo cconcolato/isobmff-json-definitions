@@ -1,0 +1,63 @@
+[
+    {
+        "type": "iref",
+        "parentType": "FullBox",
+        "fields":
+        [
+            {
+                "name": "references",
+                "type": "Array",
+                "arrayEntryType": "SingleItemTypeReferenceBox",
+                "condition": "boxIsVersion0"
+            },
+            {
+                "name": "references",
+                "type": "Array",
+                "arrayEntryType": "SingleItemTypeReferenceBoxLarge",
+                "condition": "boxIsVersion1"
+            }
+        ]
+    },
+    {
+        "type": "SingleItemTypeReferenceBoxLarge",
+        "parentType": "Box",
+        "fields":
+        [
+            {
+                "name": "from_item_ID",
+                "type": "Uint32"
+            },
+            {
+                "name": "count",
+                "type": "Uint16"
+            },
+            {
+                "name": "references",
+                "type": "Array",
+                "arrayEntryType": "Uint32",
+                "count": "count"
+            }
+        ]
+    },
+    {
+        "type": "SingleItemTypeReferenceBox",
+        "parentType": "Box",
+        "fields":
+        [
+            {
+                "name": "from_item_ID",
+                "type": "Uint16"
+            },
+            {
+                "name": "count",
+                "type": "Uint16"
+            },
+            {
+                "name": "references",
+                "type": "Array",
+                "arrayEntryType": "Uint16",
+                "count": "count"
+            }
+        ]
+    }
+]

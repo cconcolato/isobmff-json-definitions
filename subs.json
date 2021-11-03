@@ -1,0 +1,57 @@
+{
+    "type": "subs",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "entry_count",
+            "type": "Uint32"
+        },
+        {
+            "name": "entries",
+            "type": "Array",
+            "count": "entry_count",
+            "fields":
+            [
+                {
+                    "name": "sample_delta",
+                    "type": "Uint32"
+                },
+                {
+                    "name": "subsample_count",
+                    "type": "Uint16"
+                },
+                {
+                    "name": "subsamples",
+                    "type": "Array",
+                    "condition": "subsHasSubsamples",
+                    "fields":
+                    [
+                        {
+                            "name": "size",
+                            "type": "Uint32",
+                            "condition": "boxIsVersion1"
+                        },
+                        {
+                            "name": "size",
+                            "type": "Uint16",
+                            "condition": "boxIsVersion0"
+                        },
+                        {
+                            "name": "priority",
+                            "type": "Uint8"
+                        },
+                        {
+                            "name": "discardable",
+                            "type": "Uint8"
+                        },
+                        {
+                            "name": "codec_specific_parameters",
+                            "type": "Uint32"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

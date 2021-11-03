@@ -1,0 +1,67 @@
+{
+    "type": "tfhd",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "track_id",
+            "type": "Uint32"
+        },
+        {
+            "name": "base_data_offset",
+            "type": "Uint64",
+            "condition": "tfhdHasBdopFlag"
+        },
+        {
+            "name": "default_sample_description_index",
+            "type": "Uint32",
+            "condition": "tfhdHasSdipFlag"
+        },
+        {
+            "name": "default_sample_duration",
+            "type": "Uint32",
+            "condition": "tfhdHasDsdpFlag"
+        },
+        {
+            "name": "default_sample_size",
+            "type": "Uint32",
+            "condition": "tfhdHasDsspFlag"
+        },
+        {
+            "name": "default_sample_flags",
+            "type": "Flags32",
+            "condition": "tfhdHasDsfpFlag"
+        }
+    ],
+    "flags":
+    [
+        {
+            "name": "base-data-offset-present",
+            "value": 1
+        },
+        {
+            "name": "sample-description-index-present",
+            "value": 2
+        },
+        {
+            "name": "default-sample-duration-present",
+            "value": 8
+        },
+        {
+            "name": "default-sample-size-present",
+            "value": 16
+        },
+        {
+            "name": "default-sample-flags-present",
+            "value": 32
+        },
+        {
+            "name": "duration-is-empty",
+            "value": 65536
+        },
+        {
+            "name": "default-base-is-moof",
+            "value": 131072
+        }
+    ]
+}

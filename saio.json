@@ -1,0 +1,35 @@
+{
+    "type": "saio",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "aux_info_type",
+            "type": "Uint32",
+            "condition": "boxHasFlags1"
+        },
+        {
+            "name": "aux_info_type_parameter",
+            "type": "Uint32",
+            "condition": "boxHasFlags1"
+        },
+        {
+            "name": "count",
+            "type": "Uint32"
+        },
+        {
+            "name": "offset",
+            "type": "Array",
+            "arrayEntryType": "Uint32",
+            "count": "count",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "offset",
+            "type": "Array",
+            "arrayEntryType": "Uint64",
+            "count": "count",
+            "condition": "boxIsVersion1"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "type": "tmin",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "time",
+            "type": "Uint32"
+        }
+    ]
+}

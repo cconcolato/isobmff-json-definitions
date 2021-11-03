@@ -1,0 +1,11 @@
+{
+    "type": "pmax",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "bytes",
+            "type": "Uint32"
+        }
+    ]
+}

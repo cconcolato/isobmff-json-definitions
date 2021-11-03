@@ -1,0 +1,41 @@
+{
+    "type": "stz2",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "reserved",
+            "type": "Uint24"
+        },
+        {
+            "name": "field_size",
+            "type": "Uint8",
+            "validation": "stz2ValidateLength"
+        },
+        {
+            "name": "sample_count",
+            "type": "Uint32"
+        },
+        {
+            "name": "sample_sizes",
+            "type": "Array",
+            "arrayEntryType": "bit4",
+            "count": "sample_count",
+            "condition": "stz2FieldSizeIs4"
+        },
+        {
+            "name": "sample_sizes",
+            "type": "Array",
+            "arrayEntryType": "Uint8",
+            "count": "sample_count",
+            "condition": "stz2FieldSizeIs8"
+        },
+        {
+            "name": "sample_sizes",
+            "type": "Array",
+            "arrayEntryType": "Uint16",
+            "count": "sample_count",
+            "condition": "stz2FieldSizeIs16"
+        }
+    ]
+}

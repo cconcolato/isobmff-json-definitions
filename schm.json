@@ -1,0 +1,20 @@
+{
+    "type": "schm",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "scheme_type",
+            "type": "String4"
+        },
+        {
+            "name": "scheme_version",
+            "type": "Uint32"
+        },
+        {
+            "name": "scheme_uri",
+            "type": "String",
+            "condition": "boxHasFlags1"
+        }
+    ]
+}

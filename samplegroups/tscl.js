@@ -1,0 +1,4 @@
+{
+    "type": "tscl",
+    "parentType": "SampleGroup"
+}

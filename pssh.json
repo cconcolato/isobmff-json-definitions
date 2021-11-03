@@ -1,0 +1,33 @@
+{
+    "type": "pssh",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "system_id",
+            "type": "Hex16"
+        },
+        {
+            "name": "count",
+            "type": "Uint32",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "kid",
+            "type": "Array",
+            "arrayEntryType": "Hex16",
+            "count": "count",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "datasize",
+            "type": "Uint32"
+        },
+        {
+            "name": "psshdata",
+            "type": "Array",
+            "arrayEntryType": "Uint8",
+            "count": "datasize"
+        }
+    ]
+}

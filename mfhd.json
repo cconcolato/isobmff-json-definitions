@@ -1,0 +1,11 @@
+{
+    "type": "mfhd",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "sequence_number",
+            "type": "Uint32"
+        }
+    ]
+}

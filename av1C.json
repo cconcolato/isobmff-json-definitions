@@ -1,0 +1,76 @@
+{
+    "type": "av1C",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "marker",
+            "type": "bit1",
+            "validation": "isValue1"
+        },
+        {
+            "name": "version",
+            "type": "bit7",
+            "validation": "isValue1"
+        },
+        {
+            "name": "seq_profile",
+            "type": "bit3"
+        },
+        {
+            "name": "seq_level_idx_0",
+            "type": "bit5"
+        },
+        {
+            "name": "seq_tier_0",
+            "type": "bit1"
+        },
+        {
+            "name": "high_bitdepth",
+            "type": "bit1"
+        },
+        {
+            "name": "twelve_bit",
+            "type": "bit1"
+        },
+        {
+            "name": "monochrome",
+            "type": "bit1"
+        },
+        {
+            "name": "chroma_subsampling_x",
+            "type": "bit1"
+        },
+        {
+            "name": "chroma_subsampling_y",
+            "type": "bit1"
+        },
+        {
+            "name": "chroma_sample_position",
+            "type": "bit2"
+        },
+        {
+            "name": "reserved_1",
+            "type": "bit3"
+        },
+        {
+            "name": "initial_presentation_delay_present",
+            "type": "bit1"
+        },
+        {
+            "name": "initial_presentation_delay_minus_one",
+            "type": "bit4",
+            "condition": "av1CInitialPresentationDelayPresent"
+        },
+        {
+            "name": "reserved_2",
+            "type": "bit4",
+            "condition": "av1CInitialPresentationDelayNotPresent"
+        },
+        {
+            "name": "configOBUs",
+            "type": "Array",
+            "arrayEntryType": "Uint8"
+        }
+    ]
+}

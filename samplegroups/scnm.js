@@ -1,0 +1,4 @@
+{
+    "type": "scnm",
+    "parentType": "SampleGroup"
+}

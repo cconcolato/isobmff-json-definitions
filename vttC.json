@@ -1,0 +1,11 @@
+{
+    "type": "vttC",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "text",
+            "type": "String"
+        }
+    ]
+}

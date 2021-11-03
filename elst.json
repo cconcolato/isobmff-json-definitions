@@ -1,0 +1,54 @@
+[
+    {
+        "type": "elst",
+        "parentType": "FullBox",
+        "fields":
+        [
+            {
+                "name": "entry_count",
+                "type": "Uint32"
+            },
+            {
+                "name": "entries",
+                "type": "Array",
+                "count": "entry_count",
+                "arrayEntryType": "elstEntry"
+            }
+        ]
+    },
+    {
+        "type": "elstEntry",
+        "parentType": null,
+        "fields":
+        [
+            {
+                "name": "segment_duration",
+                "type": "Uint64",
+                "condition": "boxIsVersion1"
+            },
+            {
+                "name": "media_time",
+                "type": "Int64",
+                "condition": "boxIsVersion1"
+            },
+            {
+                "name": "segment_duration",
+                "type": "Uint32",
+                "condition": "boxIsVersion0"
+            },
+            {
+                "name": "media_time",
+                "type": "Uint32",
+                "condition": "boxIsVersion0"
+            },
+            {
+                "name": "media_rate_integer",
+                "type": "Uint16"
+            },
+            {
+                "name": "media_rate_fraction",
+                "type": "Uint16"
+            }
+        ]
+    }
+]

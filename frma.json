@@ -1,0 +1,11 @@
+{
+    "type": "frma",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "data_format",
+            "type": "String4"
+        }
+    ]
+}

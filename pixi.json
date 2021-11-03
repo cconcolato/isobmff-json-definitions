@@ -1,0 +1,17 @@
+{
+    "type": "pixi",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "num_channels",
+            "type": "Uint8"
+        },
+        {
+            "name": "bits_per_channels",
+            "type": "Array",
+            "arrayEntryType": "Uint8",
+            "count": "num_channels"
+        }
+    ]
+}

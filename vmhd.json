@@ -1,0 +1,17 @@
+{
+    "type": "vmhd",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "graphicsmode",
+            "type": "Uint16"
+        },
+        {
+            "name": "opcolor",
+            "type": "Array",
+            "arrayEntryType": "Uint16",
+            "count": 3
+        }
+    ]
+}

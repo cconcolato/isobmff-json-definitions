@@ -1,0 +1,36 @@
+{
+    "type": "sbgp",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "grouping_type",
+            "type": "String4"
+        },
+        {
+            "name": "grouping_type_parameter",
+            "type": "Uint32",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "entry_count",
+            "type": "Uint32"
+        },
+        {
+            "name": "entries",
+            "type": "Array",
+            "count": "entry_count",
+            "fields":
+            [
+                {
+                    "name": "sample_count",
+                    "type": "Int32"
+                },
+                {
+                    "name": "group_description_index",
+                    "type": "Int32"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "type": "infe",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "item_ID",
+            "type": "Uint16",
+            "condition": "boxIsVersionLessThan2"
+        },
+        {
+            "name": "item_protection_index",
+            "type": "Uint16",
+            "condition": "boxIsVersionLessThan2"
+        },
+        {
+            "name": "item_name",
+            "type": "CString",
+            "condition": "boxIsVersionLessThan2"
+        },
+        {
+            "name": "content_type",
+            "type": "CString",
+            "condition": "boxIsVersionLessThan2"
+        },
+        {
+            "name": "content_encoding",
+            "type": "CString",
+            "condition": "boxIsVersionLessThan2"
+        },
+        {
+            "name": "extension_type",
+            "type": "String4",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "item_ID",
+            "type": "Uint16",
+            "condition": "boxIsVersion2"
+        },
+        {
+            "name": "item_ID",
+            "type": "Uint32",
+            "condition": "boxIsVersion3"
+        },
+        {
+            "name": "item_protection_index",
+            "type": "Uint16",
+            "condition": "boxIsVersion2Or3"
+        },
+        {
+            "name": "item_type",
+            "type": "String4",
+            "condition": "boxIsVersion2Or3"
+        },
+        {
+            "name": "item_name",
+            "type": "CString",
+            "condition": "boxIsVersion2Or3"
+        },
+        {
+            "name": "content_type",
+            "type": "CString",
+            "condition": "infeIsItemMime"
+        },
+        {
+            "name": "content_encoding",
+            "type": "CString",
+            "condition": "infeIsItemMime"
+        },
+        {
+            "name": "item_uri_type",
+            "type": "CString",
+            "condition": "infeIsItemUri"
+        }
+    ]
+}

@@ -1,0 +1,80 @@
+{
+    "type": "trun",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "sample_count",
+            "type": "Uint32"
+        },
+        {
+            "name": "data_offset",
+            "type": "Int32",
+            "condition": "trunHasDopFlag"
+        },
+        {
+            "name": "first_sample_flags",
+            "type": "Int32",
+            "condition": "trunHasFsfpFlag"
+        },
+        {
+            "type": "Array",
+            "count": "sample_count",
+            "fields":
+            [
+                {
+                    "name": "sample_duration",
+                    "type": "Uint32",
+                    "condition": "trunHasSdpFlag"
+                },
+                {
+                    "name": "sample_size",
+                    "type": "Uint32",
+                    "condition": "trunHasSspFlag"
+                },
+                {
+                    "name": "sample_flags",
+                    "type": "Flags32",
+                    "condition": "trunHasSfpFlag"
+                },
+                {
+                    "name": "sample_composition_time_offset",
+                    "type": "Uint32",
+                    "condition": "trunIsTimePresentUnsigned"
+                },
+                {
+                    "name": "sample_composition_time_offset",
+                    "type": "Int32",
+                    "condition": "trunIsTimePresentSigned"
+                }
+            ]
+        }
+    ],
+    "flags":
+    [
+        {
+            "name": "data-offset-present",
+            "value": 1
+        },
+        {
+            "name": "first-sample-flags-present",
+            "value": 4
+        },
+        {
+            "name": "sample-duration-present",
+            "value": 256
+        },
+        {
+            "name": "sample-size-present",
+            "value": 512
+        },
+        {
+            "name": "sample-flags-present",
+            "value": 1024
+        },
+        {
+            "name": "sample-composition-time-offsets-present",
+            "value": 2048
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "type": "payt",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "payloadID",
+            "type": "Uint32"
+        },
+        {
+            "name": "count",
+            "type": "Uint8"
+        },
+        {
+            "name": "rtpmap_string",
+            "type": "String",
+            "count": "count"
+        }
+    ]
+}

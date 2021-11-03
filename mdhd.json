@@ -1,0 +1,15 @@
+{ "type": "mdhd", "parentType": "FullBox", "fields": [
+	{ "name": "creation_time", "type": "Uint32", "condition": "boxIsVersion0" },
+	{ "name": "modification_time", "type": "Uint32", "condition": "boxIsVersion0" },
+	{ "name": "timescale", "type": "Uint32", "condition": "boxIsVersion0" },
+	{ "name": "duration", "type": "Uint32", "condition": "boxIsVersion0" },
+
+	{ "name": "creation_time", "type": "Uint64", "condition": "boxIsVersion1" },
+	{ "name": "modification_time", "type": "Uint64", "condition": "boxIsVersion1" },
+	{ "name": "timescale", "type": "Uint32", "condition": "boxIsVersion1" },
+	{ "name": "duration", "type": "Uint64", "condition": "boxIsVersion1" },
+
+	{ "name": "language", "type": "language"},
+	{ "name": "pre_defined", "type": "Uint16", "validation": "isValue0" }
+]}
+

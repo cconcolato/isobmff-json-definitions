@@ -1,0 +1,15 @@
+{
+    "type": "smhd",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "balance",
+            "type": "Uint16"
+        },
+        {
+            "name": "reserved",
+            "type": "Uint16"
+        }
+    ]
+}

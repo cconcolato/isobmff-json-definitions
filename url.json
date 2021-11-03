@@ -1,0 +1,19 @@
+{
+    "type": "url ",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "location",
+            "type": "CString",
+            "condition": "boxHasNotFlags1"
+        }
+    ],
+    "flags":
+    [
+        {
+            "name": "same-file",
+            "value": 1
+        }
+    ]
+}

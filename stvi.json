@@ -1,0 +1,33 @@
+{
+    "type": "stvi",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "reserved",
+            "type": "bit30"
+        },
+        {
+            "name": "single_view_allowed",
+            "type": "bit2"
+        },
+        {
+            "name": "stereo_scheme",
+            "type": "Uint32"
+        },
+        {
+            "name": "length",
+            "type": "Uint32"
+        },
+        {
+            "name": "stereo_indication_type",
+            "type": "String",
+            "size": "length"
+        },
+        {
+            "name": "boxes",
+            "type": "Array",
+            "arrayEntryBaseType": "Box"
+        }
+    ]
+}

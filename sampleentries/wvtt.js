@@ -1,0 +1,4 @@
+{
+    "type": "wvtt",
+    "parentType": "MetadataSampleEntry"
+}

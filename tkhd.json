@@ -1,0 +1,112 @@
+{
+    "type": "tkhd",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "creation_time",
+            "type": "Uint32",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "modification_time",
+            "type": "Uint32",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "track_id",
+            "type": "Uint32",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "reserved_1",
+            "type": "Uint32",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "duration",
+            "type": "Uint32",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "creation_time",
+            "type": "Uint64",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "modification_time",
+            "type": "Uint64",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "track_id",
+            "type": "Uint32",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "reserved_1",
+            "type": "Uint32",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "duration",
+            "type": "Uint64",
+            "condition": "boxIsVersion1"
+        },
+        {
+            "name": "reserved_2",
+            "type": "Array",
+            "arrayEntryType": "Uint32",
+            "count": 2
+        },
+        {
+            "name": "layer",
+            "type": "Uint16"
+        },
+        {
+            "name": "alternate_group",
+            "type": "Uint16"
+        },
+        {
+            "name": "volume",
+            "type": "Uint16"
+        },
+        {
+            "name": "reserved_3",
+            "type": "Uint16"
+        },
+        {
+            "name": "matrix",
+            "type": "Array",
+            "arrayEntryType": "Uint32",
+            "count": 9
+        },
+        {
+            "name": "width",
+            "type": "Uint32"
+        },
+        {
+            "name": "height",
+            "type": "Uint32"
+        }
+    ],
+    "flags":
+    [
+        {
+            "name": "track_enabled",
+            "value": 1
+        },
+        {
+            "name": "track_in_movie",
+            "value": 2
+        },
+        {
+            "name": "track_in_preview",
+            "value": 4
+        },
+        {
+            "name": "track_size_is_aspect_ratio",
+            "value": 8
+        }
+    ]
+}

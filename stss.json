@@ -1,0 +1,18 @@
+{
+    "type": "stss",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "entry_count",
+            "type": "Uint32"
+        },
+        {
+            "name": "sample_numbers",
+            "type": "Array",
+            "arrayEntryType": "Uint32",
+            "count": "entry_count",
+            "condition": "boxIsVersion0"
+        }
+    ]
+}

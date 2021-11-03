@@ -1,0 +1,20 @@
+{
+    "type": "ftyp",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "major_brand",
+            "type": "String4"
+        },
+        {
+            "name": "minor_version",
+            "type": "Uint32"
+        },
+        {
+            "name": "compatible_brands",
+            "type": "Array",
+            "arrayEntryType": "String4"
+        }
+    ]
+}

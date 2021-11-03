@@ -1,0 +1,26 @@
+{
+    "type": "stts",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "entry_count",
+            "type": "Uint32"
+        },
+        {
+            "type": "Array",
+            "count": "entry_count",
+            "fields":
+            [
+                {
+                    "name": "sample_counts",
+                    "type": "Uint32"
+                },
+                {
+                    "name": "sample_deltas",
+                    "type": "Int32"
+                }
+            ]
+        }
+    ]
+}

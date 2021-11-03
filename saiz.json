@@ -1,0 +1,32 @@
+{
+    "type": "saiz",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "aux_info_type",
+            "type": "Uint32",
+            "condition": "boxHasFlags1"
+        },
+        {
+            "name": "aux_info_type_parameter",
+            "type": "Uint32",
+            "condition": "boxHasFlags1"
+        },
+        {
+            "name": "default_sample_info_size",
+            "type": "Uint8"
+        },
+        {
+            "name": "count",
+            "type": "Uint32"
+        },
+        {
+            "name": "sample_info_size",
+            "type": "Array",
+            "arrayEntryType": "Uint8",
+            "count": "count",
+            "condition": "saizHasDefaultSampleInfoSize0"
+        }
+    ]
+}

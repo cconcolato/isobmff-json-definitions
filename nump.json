@@ -1,0 +1,11 @@
+{
+    "fields":
+    [
+        {
+            "name": "packetssent",
+            "type": "Uint64"
+        }
+    ],
+    "parentType": "Box",
+    "type": "nump"
+}

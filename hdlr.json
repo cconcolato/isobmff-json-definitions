@@ -1,0 +1,29 @@
+{
+    "type": "hdlr",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "reserved_1",
+            "type": "Uint32",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "handler",
+            "type": "String4",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "reserved_2",
+            "type": "Array",
+            "arrayEntryType": "Uint32",
+            "count": 3,
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "name",
+            "type": "String",
+            "condition": "boxIsVersion0"
+        }
+    ]
+}

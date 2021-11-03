@@ -1,0 +1,18 @@
+{
+    "type": "stco",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "entry_count",
+            "type": "Uint32"
+        },
+        {
+            "name": "chunk_offsets",
+            "type": "Array",
+            "count": "entry_count",
+            "arrayEntryType": "Uint32",
+            "condition": "boxIsVersion0"
+        }
+    ]
+}

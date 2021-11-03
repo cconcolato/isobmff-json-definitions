@@ -1,0 +1,4 @@
+{
+    "type": "vipr",
+    "parentType": "SampleGroup"
+}

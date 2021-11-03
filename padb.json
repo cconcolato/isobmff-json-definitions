@@ -1,0 +1,17 @@
+{
+    "type": "padb",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "sample_count",
+            "type": "Uint32"
+        },
+        {
+            "name": "padbits",
+            "type": "Array",
+            "arrayEntryType": "Uint8",
+            "count": "padbCount"
+        }
+    ]
+}

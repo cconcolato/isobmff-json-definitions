@@ -1,0 +1,39 @@
+{
+    "type": "clap",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "cleanApertureWidthN",
+            "type": "Uint32"
+        },
+        {
+            "name": "cleanApertureWidthD",
+            "type": "Uint32"
+        },
+        {
+            "name": "cleanApertureHeightN",
+            "type": "Uint32"
+        },
+        {
+            "name": "cleanApertureHeightD",
+            "type": "Uint32"
+        },
+        {
+            "name": "horizOffN",
+            "type": "Uint32"
+        },
+        {
+            "name": "horizOffD",
+            "type": "Uint32"
+        },
+        {
+            "name": "vertOffN",
+            "type": "Uint32"
+        },
+        {
+            "name": "vertOffD",
+            "type": "Uint32"
+        }
+    ]
+}

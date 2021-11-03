@@ -1,0 +1,12 @@
+{
+    "type": "meta",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "boxes",
+            "type": "Array",
+            "arrayEntryBaseType": "Box"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "type": "dac3",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "fscod",
+            "type": "bit2"
+        },
+        {
+            "name": "bsid",
+            "type": "bit5"
+        },
+        {
+            "name": "bsmod",
+            "type": "bit3"
+        },
+        {
+            "name": "acmod",
+            "type": "bit3"
+        },
+        {
+            "name": "lfeon",
+            "type": "bit1"
+        },
+        {
+            "name": "bit_rate_code",
+            "type": "bit5"
+        },
+        {
+            "name": "reserved",
+            "type": "bit5"
+        }
+    ]
+}

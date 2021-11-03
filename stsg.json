@@ -1,0 +1,21 @@
+{
+    "type": "stsg",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "grouping_type",
+            "type": "Uint32"
+        },
+        {
+            "name": "count",
+            "type": "Uint16"
+        },
+        {
+            "name": "group_description_index",
+            "type": "Array",
+            "arrayEntryType": "Uint32",
+            "count": "count"
+        }
+    ]
+}

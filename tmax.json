@@ -1,0 +1,11 @@
+{
+    "type": "tmax",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "time",
+            "type": "Uint32"
+        }
+    ]
+}

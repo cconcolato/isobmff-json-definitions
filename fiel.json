@@ -1,0 +1,15 @@
+{
+    "type": "fiel",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "fieldCount",
+            "type": "Uint8"
+        },
+        {
+            "name": "fieldOrdering",
+            "type": "Uint8"
+        }
+    ]
+}

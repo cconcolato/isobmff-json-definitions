@@ -1,0 +1,1 @@
+function tfraSize(struct) { return (8*(struct._parent.length_size_of_traf_num+1)} }

@@ -1,0 +1,55 @@
+{
+    "type": "ipma",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "entry_count",
+            "type": "Uint32"
+        },
+        {
+            "name": "associations",
+            "type": "Array",
+            "count": "entry_count",
+            "fields":
+            [
+                {
+                    "name": "id",
+                    "type": "Uint16",
+                    "condition": "boxIsVersion0"
+                },
+                {
+                    "name": "id",
+                    "type": "Uint32",
+                    "condition": "boxIsVersion1"
+                },
+                {
+                    "name": "association_count",
+                    "type": "Uint8"
+                },
+                {
+                    "name": "props",
+                    "type": "Array",
+                    "count": "association_count",
+                    "fields":
+                    [
+                        {
+                            "name": "essential",
+                            "type": "bit1"
+                        },
+                        {
+                            "name": "property_index",
+                            "type": "bit15",
+                            "condition": "boxHasFlags1"
+                        },
+                        {
+                            "name": "property_index",
+                            "type": "bit7",
+                            "condition": "boxHasNotFlags1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "type": "maxr",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "period",
+            "type": "Uint32"
+        },
+        {
+            "name": "bytes",
+            "type": "Uint32"
+        }
+    ]
+}

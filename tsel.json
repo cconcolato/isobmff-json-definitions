@@ -1,0 +1,16 @@
+{
+    "type": "tsel",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "switch_group",
+            "type": "Uint32"
+        },
+        {
+            "name": "attribute_list",
+            "type": "Array",
+            "arrayEntryType": "Uint32"
+        }
+    ]
+}

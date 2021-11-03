@@ -1,0 +1,17 @@
+{
+    "type": "pitm",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "item_id",
+            "type": "Uint16",
+            "condition": "boxIsVersion0"
+        },
+        {
+            "name": "item_id",
+            "type": "Uint32",
+            "condition": "boxIsVersion1"
+        }
+    ]
+}

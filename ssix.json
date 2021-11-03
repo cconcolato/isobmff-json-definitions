@@ -1,0 +1,34 @@
+[
+    {
+        "type": "ssix",
+        "parentType": "FullBox",
+        "fields":
+        [
+            {
+                "name": "subsegment_count",
+                "type": "Uint32"
+            },
+            {
+                "name": "subsegments",
+                "type": "Array",
+                "arrayEntryType": "ssixEntry",
+                "count": "subsegment_count"
+            }
+        ]
+    },
+    {
+        "type": "ssixEntry",
+        "parentType": null,
+        "fields":
+        [
+            {
+                "name": "level",
+                "type": "Uint8"
+            },
+            {
+                "name": "range_size",
+                "type": "Uint24"
+            }
+        ]
+    }
+]

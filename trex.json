@@ -1,0 +1,27 @@
+{
+    "type": "trex",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "track_id",
+            "type": "Uint32"
+        },
+        {
+            "name": "default_sample_description_index",
+            "type": "Uint32"
+        },
+        {
+            "name": "default_sample_duration",
+            "type": "Uint32"
+        },
+        {
+            "name": "default_sample_size",
+            "type": "Uint32"
+        },
+        {
+            "name": "default_sample_flags",
+            "type": "Uint32"
+        }
+    ]
+}

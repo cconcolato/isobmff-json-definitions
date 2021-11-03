@@ -1,0 +1,138 @@
+{
+    "type": "hvcC",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "configurationVersion",
+            "type": "Uint8",
+            "validation": 1
+        },
+        {
+            "name": "general_profile_space",
+            "type": "bit2"
+        },
+        {
+            "name": "general_tier_flag",
+            "type": "bit1"
+        },
+        {
+            "name": "general_profile_idc",
+            "type": "bit5"
+        },
+        {
+            "name": "general_profile_compatibility",
+            "type": "Uint32"
+        },
+        {
+            "name": "general_constraint_indicator",
+            "type": "Array",
+            "arrayEntryType": "Uint8",
+            "count": 6
+        },
+        {
+            "name": "general_level_idc",
+            "type": "Uint8"
+        },
+        {
+            "name": "reserved_1",
+            "type": "bit4",
+            "validation": 15
+        },
+        {
+            "name": "min_spatial_segmentation_idc",
+            "type": "bit12"
+        },
+        {
+            "name": "reserved_2",
+            "type": "bit6",
+            "validation": 63
+        },
+        {
+            "name": "parallelismType",
+            "type": "bit2"
+        },
+        {
+            "name": "reserved_2",
+            "type": "bit6",
+            "validation": 63
+        },
+        {
+            "name": "chroma_format_idc",
+            "type": "bit2"
+        },
+        {
+            "name": "reserved_3",
+            "type": "bit5",
+            "validation": 31
+        },
+        {
+            "name": "bit_depth_luma_minus8",
+            "type": "bit3"
+        },
+        {
+            "name": "reserved_4",
+            "type": "bit5",
+            "validation": 31
+        },
+        {
+            "name": "bit_depth_chroma_minus8",
+            "type": "bit3"
+        },
+        {
+            "name": "avgFrameRate",
+            "type": "Uint16"
+        },
+        {
+            "name": "constantFrameRate",
+            "type": "bit2"
+        },
+        {
+            "name": "numTemporalLayers",
+            "type": "bit3"
+        },
+        {
+            "name": "temporalIdNested",
+            "type": "bit1"
+        },
+        {
+            "name": "lengthSizeMinusOne",
+            "type": "bit2"
+        },
+        {
+            "name": "numOfArrays",
+            "type": "Uint8"
+        },
+        {
+            "name": "nalu_arrays",
+            "type": "Array",
+            "count": "numOfArrays",
+            "fields":
+            [
+                {
+                    "name": "completeness",
+                    "type": "bit1"
+                },
+                {
+                    "name": "reserved_1",
+                    "type": "bit1",
+                    "validation": 0
+                },
+                {
+                    "name": "nalu_type",
+                    "type": "bit6"
+                },
+                {
+                    "name": "numNalus",
+                    "type": "Uint16"
+                },
+                {
+                    "name": "nalu_array",
+                    "type": "Array",
+                    "arrayEntryType": "Uint8",
+                    "count": "numNalus"
+                }
+            ]
+        }
+    ]
+}

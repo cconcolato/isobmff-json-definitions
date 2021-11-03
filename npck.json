@@ -1,0 +1,11 @@
+{
+    "type": "npck",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "packetssent",
+            "type": "Uint32"
+        }
+    ]
+}

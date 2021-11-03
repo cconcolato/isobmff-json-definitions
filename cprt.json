@@ -1,0 +1,15 @@
+{
+    "type": "cprt",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "language",
+            "type": "language"
+        },
+        {
+            "name": "notice",
+            "type": "CString"
+        }
+    ]
+}

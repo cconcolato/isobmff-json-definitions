@@ -1,0 +1,11 @@
+{
+    "type": "elng",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "extended_language",
+            "type": "String"
+        }
+    ]
+}

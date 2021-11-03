@@ -1,0 +1,12 @@
+{
+    "type": "esds",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "esd",
+            "type": "3",
+            "namespace": "MPEG4ODF"
+        }
+    ]
+}

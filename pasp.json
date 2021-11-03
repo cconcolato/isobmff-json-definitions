@@ -1,0 +1,15 @@
+{
+    "type": "pasp",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "hSpacing",
+            "type": "Uint32"
+        },
+        {
+            "name": "vSpacing",
+            "type": "Uint32"
+        }
+    ]
+}

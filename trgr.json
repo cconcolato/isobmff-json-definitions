@@ -1,0 +1,25 @@
+[
+    {
+        "type": "trgr",
+        "parentType": "Box",
+        "fields":
+        [
+            {
+                "name": "boxes",
+                "type": "Array",
+                "arrayEntryBaseType": "TrackGroupTypeBox"
+            }
+        ]
+    },
+    {
+        "type": "TrackGroupTypeBox",
+        "parentType": "FullBox",
+        "fields":
+        [
+            {
+                "name": "track_group_id",
+                "type": "Uint32"
+            }
+        ]
+    }
+]

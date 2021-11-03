@@ -1,0 +1,17 @@
+{
+    "type": "mehd",
+    "parentType": "FullBox",
+    "fields":
+    [
+        {
+            "name": "fragment_duration",
+            "type": "Uint32",
+            "condition": "mehdIs32bit"
+        },
+        {
+            "name": "fragment_duration",
+            "type": "Uint64",
+            "condition": "mehdIs64bit"
+        }
+    ]
+}
