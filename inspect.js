@@ -1,5 +1,8 @@
 const fs = require('fs');
 const path = require('path');
+const process = require('process');
+
+let errorCount = 0;
 
 function getAllFiles(dirPath, arrayOfFiles) {
   files = fs.readdirSync(dirPath);
@@ -40,9 +43,11 @@ let structuresByType = {};
 allStructures.forEach(function (s) {
 	if (!s.type) {
 		console.log("Structure "+s+" is missing a type field");
+		errorCount++;
 	}
 	if (structuresByType[s.type]) {
 		console.log("Structure "+s.type+" is already defined");
+		errorCount++;
 	}
 	structuresByType[s.type] = s;
 });
@@ -67,6 +72,7 @@ Object.keys(structuresByType).forEach(
 			parentTypes[s.parentType] = 1;
 			if (!structuresByType[s.parentType]) {
 				console.log("parentType "+s.parentType+" not defined.");
+				errorCount++;
 			}
 		} else {
 			parentTypes[s.parentType]++;
@@ -96,6 +102,7 @@ Object.keys(structuresByType).forEach(
 					fieldsByType[f.type]++;
 				} else {
 					console.log("Field "+f.name+" in "+e+" has no type!");
+					errorCount++;
 				}
 			});
 		} else {
@@ -124,6 +131,7 @@ function processField(f) {
 			arrayEntryBaseTypesByType[f.arrayEntryBaseType]++;
 			if (!structuresByType[f.arrayEntryBaseType]) {
 				console.log(f.arrayEntryBaseType+" is not a defined type!");
+				errorCount++;
 			}
 		} else if (f.arrayEntryType) {
 			if (!arrayEntryTypesByType[f.arrayEntryType]) {
@@ -175,9 +183,11 @@ Object.keys(structuresByType).forEach(
 			s.flags.forEach(function(f) {
 				if (!f.name) {
 					console.log("Missing name in flag definition in "+e);
+					errorCount++;
 				}
 				if (!f.value) {
 					console.log("Missing value in flag definition in "+e);
+					errorCount++;
 				}
 			});
 		}
@@ -185,3 +195,5 @@ Object.keys(structuresByType).forEach(
 );
 console.log("Found "+structureWithFlags.length+" structures with flags.");
 // console.log(structureWithFlags);
+
+process.exit(errorCount > 0 ? 1 : 0)
