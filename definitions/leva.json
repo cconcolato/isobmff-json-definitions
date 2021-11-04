@@ -3,10 +3,10 @@
 	{ "name": "levels", "type": "Array", "fields": [
 		{ "name": "track_ID", "type": "Uint32" },
 		{ "name": "padding_flag", "type": "bit1" },
-		{ "name": "assignment_type", "type": "bit7", "validation": function(box, v) { if (v > 4) { Log.warn("BoxParser", "Unknown leva assignement type "+v} } } },
-		{ "name": "grouping_type", "type": "String4", "condition": function(box, v) { return v.assignment_type === 0 || v.assignment_type === 1; }},
-		{ "name": "grouping_type_parameter", "type": "Uint32", "condition": function(box, v) { return v.assignment_type === 1; }},
-		{ "name": "sub_track_id", "type": "Uint32", "condition": function(box, v) { return v.assignment_type === 4; }}
+		{ "name": "assignment_type", "type": "bit7" },
+		{ "name": "grouping_type", "type": "String4", "condition": "levaIsAssignment0Or1" },
+		{ "name": "grouping_type_parameter", "type": "Uint32", "condition": "levaIsAssignment1" },
+		{ "name": "sub_track_id", "type": "Uint32", "condition": "levaIsAssignment4"}
 	]}
 ]}
 
