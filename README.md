@@ -1,4 +1,4 @@
-This repo contains JSON representations of ISOBMFF boxes and other ISOBMFF structure.
+This repo contains JSON representations of ISOBMFF boxes and other ISOBMFF structures.
 The idea is to have a (mostly) declarative representation of all structures, 
 such that it can be used by various tools, from parsers, to writers, to validators,
 to conformance suite systems.
