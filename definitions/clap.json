@@ -1,6 +1,6 @@
 {
     "type": "clap",
-    "parentType": "Box",
+    "parentType": "BBBBBox",
     "fields":
     [
         {
