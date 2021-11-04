@@ -82,6 +82,7 @@ with the following properties:
 - `count`: Number | String, used when the field is of type `Array` to indicate the number of entries in the array.
 - `arrayEntryType`: String, representing the type of an array entry.
 - `arrayEntryBaseType`: String, representing the base type of an array entry.
+- `fields`: Array, if the field is array with entry types not explictly defined.
 
 - `isTypeKey`: String used to indicate that this field contains a value used to identify a type of sub-structures. 
 - `namespace`: String identifying where the field definition comes from. If not set, it is assumed to be the same as the namespace of the containing Structure.
@@ -93,6 +94,7 @@ When the field is an `Array`, the number of entries can be either:
 - given in the `count` field.
 - given in the `size` field.
 - determined based on the remaining data in the structure.
+
 It must not have both `count` and `size`.
 
 The `flag` fields is an optional array of flags JSON objects, with:
