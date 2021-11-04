@@ -39,8 +39,9 @@
                     "value": "default_length"
                 },
                 {
-                    "name": "box",
-                    "baseType": "SampleGroup",
+                    "name": "boxes",
+                    "type": "Array",
+                    "arrayEntryBaseType": "Box",
                     "count": "description_length"
                 }
             ]

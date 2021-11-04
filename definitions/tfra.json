@@ -68,17 +68,17 @@
             {
                 "name": "traf_number",
                 "type": "Uint",
-                "bitSize": "tfraSize"
+                "bitSize": "parent.size"
             },
             {
                 "name": "trun_number",
                 "type": "Uint",
-                "bitSize": "tfraSize"
+                "bitSize": "parent.size"
             },
             {
                 "name": "sample_number",
                 "type": "Uint",
-                "bitSize": "tfraSize"
+                "bitSize": "parent.size"
             }
         ]
     }
