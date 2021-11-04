@@ -1,0 +1,19 @@
+{
+  "name": "isobmff-boxes-json",
+  "version": "1.0.0",
+  "description": "JSON descriptions of ISOBMFF boxes",
+  "main": "inspect.js",
+  "scripts": {
+    "test": "node inspect.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cconcolato/isobmff-json-definitions.git"
+  },
+  "author": "Cyril Concolato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cconcolato/isobmff-json-definitions/issues"
+  },
+  "homepage": "https://github.com/cconcolato/isobmff-json-definitions#readme"
+}
