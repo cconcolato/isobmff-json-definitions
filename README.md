@@ -77,25 +77,26 @@ The predefined types are:
 - `Uint16`
 - `Uint32`
 - `Uint64`
+- `Int8`
+- `Int16`
 - `Int32`
-- ...
+- `Int64`
 - `String`: UTF-8 string. A `size` must be provided.
 - `String4`: same as `String`, but a size of 4 characters is assumed.
 - `CString`: same as `String` but the size is determined when the first NULL char is found.
 - `Hex16`: Same as `Uint16` but meant to be displayed as hexadecimal instead of decimal
 - `Flags24`: Same as `bit24` but meant to bedisplayed as binary and using `flags` definitions.
 - `Flags32`: Same as `bit32` but meant to be displayed as binary and using `flags` definitions.
-- `language`: Same as a `String` of 3 characters (per ISOBMFF legacy definition)
+- `language`: Same as a `String` of 3 characters (per ISOBMFF legacy language definition)
 
-When the field is an array, the number of entries can be either:
-- explicitly provided as a count of objects of type `arrayEntryType` or `arrayEntryBaseType`.
-- determined based on the value of another field
-- determined based on the remaining data in the structure
+When the field is an `Array`, the number of entries can be either:
+- given in the `count` field, either as a Number, or as a name of a field, or as a name of a Function.
+- given in the `size` field, either as a Number, or as a name of a field, or as a name of a Function.
+- determined based on the remaining data in the structure.
 
 The `flag` fields is an optional array of flags JSON objects, with:
-- a "name" property
-- a "value" property
-
+- `name`: String, human-readable name for the flag
+- `value`: Number, flag value
 
 Some of the field properties allow using a String. It either refers to another field name or 
 to a function to be evaluated. The definitions of the functions used in the declaration of
