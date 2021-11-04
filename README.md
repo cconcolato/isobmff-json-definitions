@@ -82,7 +82,7 @@ with the following properties:
 - `count`: Number | String, used when the field is of type `Array` to indicate the number of entries in the array.
 - `arrayEntryType`: String, representing the type of an array entry.
 - `arrayEntryBaseType`: String, representing the base type of an array entry.
-- `fields`: Array, if the field is array with entry types not explictly defined.
+- `fields`: Array, if the field is of type `Array` but its entries don't have a type explictly defined and are defined inline.
 
 - `isTypeKey`: String used to indicate that this field contains a value used to identify a type of sub-structures. 
 - `namespace`: String identifying where the field definition comes from. If not set, it is assumed to be the same as the namespace of the containing Structure.
@@ -117,6 +117,7 @@ function colrIsNclx(box) { return box.colour_type === 'nclx' }
 The first parameter of the function is the current structure being processed (box, array, ...). Each structure is expected to have:
 - a `parent` field for the parent structure,
 - a `root` field for the top level structure
+
 The second parameter is:
 - for arrays, the index of the entry
 - for non arrays, the parsed value (if parsed)
