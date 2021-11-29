@@ -63,6 +63,7 @@ with the following properties:
   - `bitX` where X is any positive integer, e.g. bit3, bit12, ...
   - `Uint8`
   - `Uint16`
+  - `Uint24`
   - `Uint32`
   - `Uint64`
   - `Int8`
@@ -87,6 +88,7 @@ with the following properties:
 - `isTypeKey`: String used to indicate that this field contains a value used to identify a type of sub-structures. 
 - `namespace`: String identifying where the field definition comes from. If not set, it is assumed to be the same as the namespace of the containing Structure.
 
+- `deferred`: Boolean, indicates if field processing has to be done after derived structure fields
 - `condition`: Number | String. It is evaluated during field processing and if it returns true, the field is processed.
 - `validation`: Number | String. Used to determine if the parsed value is correct.
 

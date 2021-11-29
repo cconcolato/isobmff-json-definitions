@@ -17,7 +17,8 @@
             {
                 "name": "boxes",
                 "type": "Array",
-                "arrayEntryBaseType": "Box"
+                "arrayEntryBaseType": "Box",
+                "deferred": true
             }
         ]
     },
