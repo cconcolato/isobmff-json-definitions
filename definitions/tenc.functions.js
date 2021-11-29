@@ -1,1 +1,0 @@
-function tencHasConstantIV(box) { return box.default_isProtected === 1 && box.default_Per_Sample_IV_Size === 0; }

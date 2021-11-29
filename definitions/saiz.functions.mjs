@@ -1,0 +1,1 @@
+export function saizHasDefaultSampleInfoSize0(box) { return box.default_sample_info_size === 0; }

@@ -1,1 +1,0 @@
-function padbCount(box) { return Math.floor((box.sample_count+1)/2); }

@@ -1,1 +1,0 @@
-function stszIsSampleSize0(box) { return box.sample_size === 0; }

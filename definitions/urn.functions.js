@@ -1,1 +1,0 @@
-function urnHasLocation(box) { return (box.size - box.hdr_size - box.name.length - 1 > 0} }
