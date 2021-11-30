@@ -1,0 +1,27 @@
+{
+    "type": "Box",
+    "parentType": null,
+    "fields":
+    [
+        {
+            "name": "size",
+            "type": "Uint32"
+        },
+        {
+            "name": "type",
+            "type": "String4",
+            "isTypeKey": true
+        },
+        {
+            "name": "uuid",
+            "type": "Hex16",
+            "condition": "boxIsUuid",
+            "isTypeKey": true
+        },
+        {
+            "name": "size",
+            "type": "Uint64",
+            "condition": "boxSizeIs1"
+        }
+    ]
+}

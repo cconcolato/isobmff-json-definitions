@@ -1,47 +1,5 @@
 [
     {
-        "type": "Box",
-        "parentType": null,
-        "fields":
-        [
-            {
-                "name": "size",
-                "type": "Uint32"
-            },
-            {
-                "name": "type",
-                "type": "String4",
-                "isTypeKey": true
-            },
-            {
-                "name": "uuid",
-                "type": "Hex16",
-                "condition": "boxIsUuid",
-                "isTypeKey": true
-            },
-            {
-                "name": "size",
-                "type": "Uint64",
-                "condition": "boxSizeIs1"
-            }
-        ]
-    },
-    {
-        "type": "FullBox",
-        "parentType": "Box",
-        "fields":
-        [
-            {
-                "name": "version",
-                "type": "Uint8"
-            },
-            {
-                "name": "flags",
-                "type": "Flags24"
-            }
-        ]
-    },
-    {
         "type": "ContainerBox",
         "parentType": "Box",
         "fields":

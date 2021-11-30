@@ -1,0 +1,15 @@
+{
+    "type": "FullBox",
+    "parentType": "Box",
+    "fields":
+    [
+        {
+            "name": "version",
+            "type": "Uint8"
+        },
+        {
+            "name": "flags",
+            "type": "Flags24"
+        }
+    ]
+}

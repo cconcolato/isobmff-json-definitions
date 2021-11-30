@@ -1,3 +1,4 @@
+import {boxHasFlag} from './FullBox.functions.mjs';
 export function tfhdHasBdopFlag(box) {
 	return boxHasFlag(box, "base-data-offset-present");
 }
@@ -15,5 +16,5 @@ export function tfhdHasDsspFlag(box) {
 } 
 
 export function tfhdHasDsfpFlag(box) {
-	return boxHasFlag(box, "flags", "default-sample-flags-present");
+	return boxHasFlag(box, "default-sample-flags-present");
 } 
